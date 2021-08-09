@@ -16,5 +16,8 @@
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "crypto-js": "^4.1.1"
   }
 }

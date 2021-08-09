@@ -1,5 +1,3 @@
-const Block = require("./block");
-
 // const block = new Block('08-08-21', "0".repeat(64), "0".repeat(64), "Eureka!");
 
 // console.log(block.toString());
@@ -12,6 +10,16 @@ const Block = require("./block");
 //   console.log(block.toString());  
 // }
 
-const fooBlock = Block.mineBlock(Block.genesis(), 'Foobar');
-console.log(Block.genesis().toString());
+// const fooBlock = Block.mineBlock(Block.genesis(), 'Foobar');
+// console.log(Block.genesis().toString());
+// console.log(fooBlock.toString());
+
+var Block = require("./block");
+
+const genesis = Block.genesis();
+const fooBlock = Block.mineBlock(genesis, []);
+
+console.log(genesis.toString());
 console.log(fooBlock.toString());
+
+
