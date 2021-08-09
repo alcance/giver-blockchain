@@ -4,7 +4,7 @@
   "description": "decentralized blockchain for givers",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --watchAll",
     "dev-test": "nodemon ./dev.test.js"
   },
   "keywords": [
@@ -15,6 +15,7 @@
   "author": "Systec Solutions <ivan@hisystec.com>",
   "license": "ISC",
   "devDependencies": {
+    "jest": "^27.0.6",
     "nodemon": "^2.0.12"
   },
   "dependencies": {
