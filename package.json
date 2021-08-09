@@ -1,0 +1,20 @@
+{
+  "name": "giver-blockchain",
+  "version": "0.0.1",
+  "description": "decentralized blockchain for givers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-test": "nodemon ./dev.test.js"
+  },
+  "keywords": [
+    "blockchain",
+    "javascript",
+    "dapp"
+  ],
+  "author": "Systec Solutions <ivan@hisystec.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
