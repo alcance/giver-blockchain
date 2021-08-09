@@ -21,5 +21,3 @@ const fooBlock = Block.mineBlock(genesis, []);
 
 console.log(genesis.toString());
 console.log(fooBlock.toString());
-
-
