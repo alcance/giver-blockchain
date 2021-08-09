@@ -13,6 +13,10 @@ class Block {
             Hash: ${this.hash}
             Data: ${this.data}`;
   }
+
+  static genesis() {
+    return new this('Genesis 💥', "0".repeat(64), "0".repeat(64), []);
+  }
 }
 
 module.exports = Block;
