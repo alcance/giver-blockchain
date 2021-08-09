@@ -35,4 +35,15 @@ describe('blockchain', () => {
     expect(bc.isValidChain(bc2.chain)).toBe(false);
   });
 
+  it('replaces current chain with a new valid chain', () => {
+    bc2.addBlock('goo');
+    bc.replaceChain(bc2.chain);
+    expect(bc.chain).toEqual(bc2.chain);
+  });
+
+  it('avoids replacing chain if lenght is not greater than current chain', () => {
+    bc.addBlock('foo');
+    bc.replaceChain(bc2.chain);
+    expect(bc.chain).not.toEqual(bc2.chain);
+  });
 });
