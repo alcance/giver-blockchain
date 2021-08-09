@@ -14,7 +14,7 @@
 // console.log(Block.genesis().toString());
 // console.log(fooBlock.toString());
 
-var Block = require("./block");
+var Block = require("./blockchain/block");
 
 const genesis = Block.genesis();
 const fooBlock = Block.mineBlock(genesis, []);
